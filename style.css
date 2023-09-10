@@ -3,8 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
   }
+      
   
-  @media (max-width:470px){
+
+          /* media query Start */
+
+
+  @media (max-width: 470px){
     .essential-button{
       margin-top:60%;
       margin-left: 20%;
@@ -19,6 +24,14 @@
       margin-top:65%;
       margin-left: 20%;
     }
+    #Footter-menun1 , #Footter-menun2{
+      display: none;
+    }
+    
+    #button-add-menu1 , #button-add-menu2{
+      display:block ;
+    }
+    
    }
 
   @media (min-width: 576px) {
@@ -30,7 +43,13 @@
       margin-top:70%;
       margin-left: 20%;
     }
+    #Footter-menun1 , #Footter-menun2{
+      display: block;
+    }  
+    #button-add-menu1 , #button-add-menu2{
+      display:none ;
     }
+  }
 
   @media (min-width: 768px) { 
     .essential-button{
@@ -62,12 +81,18 @@
 
    }
 
-swiper-container {
+
+          /* media query End */
+
+          /* swipere slider style Start */
+
+
+   .swiper {
     width: 100%;
     height: 100%;
   }
 
-  swiper-slide {
+  .swiper-slide {
     text-align: center;
     font-size: 14px;
     background: #fff;
@@ -76,16 +101,16 @@ swiper-container {
     align-items: center;
   }
 
-  swiper-slide img {
+  .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  swiper-container {
+  .swiper {
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin: 20px auto;
   }
 
@@ -96,9 +121,8 @@ swiper-container {
 
   .append-buttons button {
     display: inline-block;
-    position: absolute;
     cursor: pointer;
-    border: 1px solid #007aff;
+    border: 0px solid #007aff;
     color: #007aff;
     text-decoration: none;
     padding: 4px 10px;
@@ -106,17 +130,36 @@ swiper-container {
     margin: 0 10px;
     font-size: 13px;
   }
+
+  .swiper-button-next{
+    width: 10px;
+    color: black;
+    top: 4%;
+    right: 10%;
+    
+  }
+  .swiper-button-prev{
+    color: black;
+    top: 4%;
+    left: 75%;
+    
+  }
+  
+  .circle-5{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #7e7e7e;
+  }
+
+          /* swiper slider style End */
+
+
   .circle{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: black;
-
-  }
-  .swiper-button-next{
-   
-  }
-  .swiper-button-prev{
 
   }
   #Essentials_container_button{
@@ -138,6 +181,51 @@ swiper-container {
    color: rgb(116, 118, 117);
    font-weight: 400;
   }
+
+            /* Footer styling Start */
+
   .Footer{
     background-color: black;
   }
+  .Footer-footer{
+    font-size: 13px;
+  }
+  .menu{
+    color: rgb(133, 133, 133);
+  }
+  .menu:hover {
+    color: rgba(240, 248, 255, 0.888);
+  }
+  .hidden-menu{
+    display: none;
+    transition-timing-function: calc(3000ms);
+  }
+  .mother-menu:hover .hidden-menu{
+    display: block;
+    transition-delay: 3s;
+  }
+  .icon-circle > svg{
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    list-style: none;
+    font: inherit;
+    font-size: 28px;
+    line-height: 1.142857142857143;
+    cursor: pointer;
+    font-weight: 400;
+    color: #7e7e7e;
+    width: 30px;
+    height: 30px;
+    box-sizing: inherit;
+    fill: #7e7e7e;
+    transition: fill .2s;
+  }
+  .icon-circle :hover{
+    fill: #fff;
+    color: azure;
+  }
+  #button-add-menu1 , #button-add-menu2 {
+    cursor: pointer;
+  }
+
+          /*  footer styling End */
