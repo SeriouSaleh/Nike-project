@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width:470px){
+    .essential-button{
+      margin-top:60%;
+      margin-left: 20%;
+    }
+  }
+  @media (max-width: 576px){ 
+    .dont_miss_img{
+      width: 300px;
+      height: 300px;
+    }
+    .essential-button{
+      margin-top:65%;
+      margin-left: 20%;
+    }
+   }
+
+  @media (min-width: 576px) {
+    .dont_miss_img{
+      width: 380px;
+      height: 380px;
+    }
+    .essential-button{
+      margin-top:70%;
+      margin-left: 20%;
+    }
+    }
+
+  @media (min-width: 768px) { 
+    .essential-button{
+      margin-top:80%;
+    }
+   }
+  
+  @media (min-width: 992px) {  
+    .dont_miss_img{
+      width: 500px;
+      height: 500px;
+    }
+    
+  }
+  
+  @media (min-width: 1200px) { 
+    .dont_miss_img{
+      width: 600px;
+      height: 600px;
+    }
+    
+   }
+
+  @media (min-width: 1400px) { 
+    .dont_miss_img{
+      width: 700px;
+      height: 700px;
+    }
+
+   }
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 14px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  swiper-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+  }
+
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .append-buttons button {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+
+  }
+  .swiper-button-next{
+   
+  }
+  .swiper-button-prev{
+
+  }
+  #Essentials_container_button{
+    width: 80px;
+  }
+  .essential-button{
+   position: absolute;
+   z-index: 99;
+  margin-left: -60%;
+  }
+  .dont_miss_img{
+    height: 100%;
+    width: 100%;
+  }
+  .link{
+    line-height: 40px;
+  }
+  .link >a{
+   color: rgb(116, 118, 117);
+   font-weight: 400;
+  }
+  .Footer{
+    background-color: black;
+  }
