@@ -197,12 +197,15 @@
     color: rgba(240, 248, 255, 0.888);
   }
   .hidden-menu{
-    display: none;
-    transition-timing-function: calc(3000ms);
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
   }
   .mother-menu:hover .hidden-menu{
-    display: block;
-    transition-delay: 3s;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
   }
   .icon-circle > svg{
     -webkit-text-size-adjust: none;

@@ -5,15 +5,10 @@
 //   e.style.color="red"
 //   e.style.font_weight="700"
 // });
-//down menu 
-const hidden_menu = document.getElementById("hidden-menu");
-const downer_nav_container = document.getElementById("downer_nav_container");
 
-$("#hidden_menu").hover(function(){
-  $("#downer-nav-container").css("display", "none");
-  }, function(){
-  $(hidden_menu).css("display", "block");
-});
+
+
+
 ///////footer adding menu
 
 const add_button1 = document.getElementById("button-add-menu1");
