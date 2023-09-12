@@ -31,9 +31,15 @@
     #button-add-menu1 , #button-add-menu2{
       display:block ;
     }
-    
+  .swiper-button-prev{
+    left: 65%;
+    top: 10%;
+  }
+  .swiper-button-next{
+    right: 10%;
+    top: 10%;
    }
-
+  }
   @media (min-width: 576px) {
     .dont_miss_img{
       width: 380px;
@@ -49,6 +55,14 @@
     #button-add-menu1 , #button-add-menu2{
       display:none ;
     }
+    .swiper-button-prev{
+      left: 78%;
+      top: 5%;
+    }
+    .swiper-button-next{
+      right: 5%;
+      top: 5%;
+     }
   }
 
   @media (min-width: 768px) { 
@@ -132,17 +146,19 @@
   }
 
   .swiper-button-next{
-    width: 10px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #a1a1a1ae;
     color: black;
-    top: 4%;
-    right: 10%;
-    
+  
   }
   .swiper-button-prev{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #a1a1a1ae;
     color: black;
-    top: 4%;
-    left: 75%;
-    
   }
   
   .circle-5{
@@ -234,5 +250,15 @@
   #button-add-menu1 , #button-add-menu2 {
     cursor: pointer;
   }
-
+  .terms{
+    color: #878686;
+  }
+  .terms:hover{
+    color: aliceblue;
+    cursor: pointer;
+  }
           /*  footer styling End */
+          /* guides Modal start */
+  .Guides-modal{
+    display: none;
+  }
