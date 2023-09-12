@@ -177,9 +177,23 @@
   .link{
     line-height: 40px;
   }
-  .link >a{
+  .link > a{
    color: rgb(116, 118, 117);
    font-weight: 400;
+  }
+  .link > a:hover{
+    color: black;
+  }
+  .hidden-menu{
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ;
+  }
+  .mother-menu:hover .hidden-menu{
+    height: auto;
+    visibility: visible;
+    opacity: 1;
   }
 
             /* Footer styling Start */
@@ -196,17 +210,7 @@
   .menu:hover {
     color: rgba(240, 248, 255, 0.888);
   }
-  .hidden-menu{
-    height: 0px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s;
-  }
-  .mother-menu:hover .hidden-menu{
-    height: auto;
-    visibility: visible;
-    opacity: 1;
-  }
+
   .icon-circle > svg{
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: antialiased;
