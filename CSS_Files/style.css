@@ -259,6 +259,25 @@
   }
           /*  footer styling End */
           /* guides Modal start */
+
   .Guides-modal{
+    padding: 8px;
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    text-align: center;
     display: none;
+    border: 2px solid white;
+    color:#878686;
+    background-color: black;
+  
   }
+  .Guide-option :hover .Guides-modal {
+    display: block;
+  }
+  
+  .Guides-modal > div>div :hover{
+  color: aliceblue;
+  text-align: center;
+  }
+
