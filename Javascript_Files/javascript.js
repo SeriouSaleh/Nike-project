@@ -9,26 +9,42 @@
 
 
 
-///////footer adding menu
+///////footer menu1
 
-const add_button1 = document.getElementById("button-add-menu1");
 const menu1 = document.getElementById("Footter-menun1");
-
-function adder_1(){
+const open_button1 = document.getElementById("button-open-menu1");
+const close_button1 = document.getElementById("button-close-menu1");
+function opener_1(){
   menu1.style.display ="block";
-  console.log("test");
-  }
-  add_button1.addEventListener("click", adder_1 );
+  open_button1.style.display="none";
+  close_button1.style.visibility="visible";
+}
+function closer_1(){
+  menu1.style.display="none"; 
+  close_button1.style.visibility="hidden";
+  open_button1.style.display=""
+}
+open_button1.addEventListener("click", opener_1 );
+close_button1.addEventListener("click", closer_1);
 
+///////footer menu2
 
-
-const add_button2 = document.getElementById("button-add-menu2");
 const menu2 = document.getElementById("Footter-menun2");
-add_button2.addEventListener("click", adder_2 );
-
-function adder_2(){
+const open_button2 = document.getElementById("button-open-menu2"); 
+const close_button2 = document.getElementById("button-close-menu2");
+function opener_2(){
   menu2.style.display ="block";   
-  }
+  open_button2.style.display="none";
+  close_button2.style.visibility="visible";
+}
+function closer_2(){
+  menu2.style.display="none"; 
+  close_button2.style.visibility="hidden";
+  open_button2.style.display=""
+}
+open_button2.addEventListener("click", opener_2 );
+close_button2.addEventListener("click", closer_2);
+
 
 
 
