@@ -69,6 +69,10 @@
    .Guides-modal{
       bottom: 10%;
      }   
+     #button-open-menu1 , #button-open-menu2,
+     #button-close-menu1 , #button-close-menu2{
+      display:none;
+     } 
   }
 
   @media (min-width: 768px) { 
@@ -254,8 +258,14 @@
     fill: #fff;
     color: azure;
   }
-  #button-add-menu1 , #button-add-menu2 {
+  #button-open-menu1 , #button-open-menu2,
+  #button-close-menu1 , #button-close-menu2 {
     cursor: pointer;
+  }
+  #button-close-menu1 , #button-close-menu2{
+    visibility: hidden;
+    position: absolute;
+    right: 1px;
   }
   .terms{
     color: #878686;
