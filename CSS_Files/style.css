@@ -158,6 +158,7 @@
   .swiper-button-next{
     width: 55px;
     height: 55px;
+    font-size: 30px;
     border-radius: 50%;
     background-color: #a1a1a1ae;
     color: black;
@@ -224,6 +225,9 @@
 
             /* Footer styling Start */
 
+  .Footer a{
+    font-weight: 600;
+  }          
   .Footer{
     position: relative;
     background-color: black;
